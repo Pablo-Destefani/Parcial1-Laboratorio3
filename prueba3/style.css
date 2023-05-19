@@ -1,0 +1,12 @@
+p:first-child::first-letter{
+    color: #ff0000;
+    font-size: 200%;
+}
+
+p.dos::first-line {
+    color: blue;
+}
+
+p:last-child{
+    color: #ffff00;
+}

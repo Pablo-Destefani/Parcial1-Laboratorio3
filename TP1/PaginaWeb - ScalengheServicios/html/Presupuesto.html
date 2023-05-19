@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../dist/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+
+    
+    
+
+    <title>Scalenghe Servicios</title>
+</head>
+<body>
+    <nav class="navbar bg-personalizado" data-bs-theme="dark">
+        <div class="contenedor-menu">
+            <ul class="listaMenu">
+                <li class="elementoMenu">
+                    <a class="navbar-brand item-menu" href="Index.html">
+                        <img class="imagen-menu"src="../img/logo1.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+                        Home
+                    </a>
+                </li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="QuienesSomos.html">Quienes somos</a></li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="Productos.html">Productos</a></li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="Presupuesto.html">Presupuesto</a></li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="Contacto.html">Contacto</a></li>
+            </ul>  
+        </div>
+    </nav>
+
+    <div class="titulo">
+      <h1>Presupuesto</h1>
+    </div>
+    <form class="formulario">
+      <div class="divPricipal">
+        <div id="formulario" class="bloquePagina">
+          <div class="form-group">
+            <label class="label1" for="nombre">Nombre:</label>
+            <input type="text" class="form-control txtbox" id="nombre" name="nombre">
+            <span id="advertenciaNombre">Complete el campo nombre</span>
+          </div>
+  
+          <div class="form-group">
+              <label class="label1" for="telefono">Teléfono:</label>
+              <input type="Tel" class="form-control txtbox" id="telefono" name="telefono" >
+              <span id="advertenciaTelefono">Complete el campo telefono</span>
+              <span id="advertenciaTelefono2">Este campo debe ser númerico</span>
+            </div>
+        
+          <div class="form-group">
+            <label class="label1" for="email">Correo electrónico:</label>
+            <input type="email" class="form-control txtbox" id="email" name="email" >
+            <span id="advertenciaEmail">Complete el campo email</span>
+            <span id="advertenciaEmail2">Formato de correo incorrecto</span>
+          </div>
+
+        </div>
+
+
+        <div id="presupuesto" class="bloquePagina">
+          <table id="tablaProducto" class="table">
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div id="TotalPresupuesto">
+            
+          </div>
+          <button onclick="agregarProducto()" type="button" id="botonAgregar" class="btn btn-primary">Agregar Producto</button>
+          <button onclick="reiniciarPresupuesto()" type="button" id="botonAgregar" class="btn btn-primary">Vaciar Presupuesto</button>
+        </div>
+      </div>
+        <div >
+          <button onclick="enviarFormulario()" type="button" id="enviar" class="btn btn-primary">Enviar</button>
+        </div>
+        
+      </form>
+      
+      <div id="myModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Agregar producto</h5>
+              <button type="button" class="btn-close" onclick="cerrarModal()" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="miComboBox">Selecciones el producto a agregar al presupuesto:</label>
+              <select id="CBProductos" class="form-control" id="miComboBox">
+                <option value="0">Seleccione...</option>
+              </select>
+              <input id="cantidadPresupuesto" type="number" required>
+            </div>
+            <div class="modal-footer">
+              <button id="botonCerrar" type="button" class="btn btn-secondary" onclick="cerrarModal()" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary" onclick="agregarProductoAPresupuesto()">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Todos los derechos reservados &copy; 2023</p>
+    </footer>
+
+      <script src="../js/listaProductos.js"></script>
+      <script src="../js/Presupuesto.js"></script>
+      <script src="../js/validarFormulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+:root{
+    --ColorMenu: #18346d;
+    --ColorMenuHover:  #45649e;
+    --ColorTextoMenu: #9fa6de;
+    --ColorTextoMenuHover: #dfd29d;
+    --ColorFondo: #e5e4ed;
+    --ColorBotones: #f3f3f3
+}
+
+body{
+    background-color: var(--ColorFondo);
+    margin-top: 70px;
+    margin-bottom: 60px;
+    font-family: 'Comic Neue', cursive;
+}
+
+p{
+    text-align: justify;
+}
+
+.bg-personalizado{
+    background-color:var(--ColorMenu);
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.contenedor-menu{
+    padding: 0;
+    margin: 0;
+}
+
+.listaMenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.elementoMenu{
+    display: inline-block;
+    padding: 5px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.elementoMenu:hover{
+    background-color: var(--ColorMenuHover);
+    color: var(--ColorTextoMenuHover);
+}
+
+.imagen-menu{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid var(--ColorMenu);
+    border-radius: 6px;
+}
+
+.item-menu{
+    color: var(--ColorTextoMenu);
+}
+
+.item-menu:hover{
+    color: var(--ColorTextoMenuHover);
+}
+
+/*HOME*/
+#tituloPrincipal{
+    font-size: 80px;
+    margin: 80px;
+}
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-weight: 900;
+    padding: 20px;
+    
+  }
+  
+  
+
+.card-title{
+    font-size: 100px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    -webkit-text-stroke: 1px var(--ColorMenuHover); 
+}
+
+.modal{
+    margin-top: 30px;
+}  
+
+.modal input{
+    margin-top: 10px;
+    border: ridge 2px #dddddd;
+    border-radius: 3px;
+}
+
+/*Quienes somos*/
+
+.accordion{
+    margin: 2.5%;
+    margin-top: 20px;
+}
+
+.accordion-button{
+    background-color: var(--ColorBotones);
+}
+
+
+
+.imagenQuienesSomos{
+    width: 100%;
+    margin: 10px;
+    border: 0px none solid;
+    border-radius: 20px;
+}
+
+.bloqueAcordeon{
+    display: flex;
+}
+
+.contenedorTexto{
+    flex: 1;
+}
+.contenedorImagen{
+    flex: .5
+    ;
+}
+.contenedorTexto,.contenedorImagen{
+    margin: 20px;
+}
+
+.dialog {
+    max-width: none;
+    width: auto;
+  }
+.Mheader {
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 15px;
+    z-index: 2;
+    border: none;
+    padding-right: 30px;
+  }
+.modal-imagen {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    
+  }
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    padding: 0%;
+    border-radius: 20px;
+}
+
+/*Productos*/
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--ColorMenu);
+    
+}
+
+.table{
+    margin: 2% 5%;
+    width: 90%;
+    text-align: center;
+    
+}
+
+tr{
+    border-bottom: 1px ridge var(--ColorMenu);
+}
+
+#tablaProducto tr:nth-child(even){
+    background-color: var(--ColorTextoMenu);
+}
+
+.divPricipal{
+    display: flex;
+    flex-wrap: wrap;
+}
+#tablaP{
+    flex:1;
+}
+#ModalidadDeTrabajo{
+    flex: 0.7;
+}
+
+.titulo p{
+    width: 90%;
+    margin: 5% 5%;
+    text-align: justify;
+    
+}
+
+/*Presupuesto*/
+
+
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 16px;
+}
+
+.label1{
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.txtbox{
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+
+}
+
+.label2{
+    margin-bottom: 5px;
+}
+
+.txtbox, #mensaje{
+    border: 1px ridge var(--ColorMenu);
+}
+
+
+span{
+    display: none;
+    font-size: 12px;
+    margin-left: 160px;
+    margin-top: 5px;
+}
+
+.advertencia{
+    display: block;
+    color: red;
+}
+
+.form-control{
+    border-radius: 5px ;
+}
+
+#mensaje{
+    height: 130px;
+    width: 100%;
+
+}
+
+.btn-primary{
+    display: block;
+    background-color: var(--ColorMenu);
+    color: var(--ColorTextoMenu);
+    margin-top: 10px;
+}
+
+.btn-primary:hover{
+    background-color: var(--ColorMenuHover);
+    color: var(--ColorTextoMenuHover);
+}
+
+#botonAgregar{
+    width: 70%;
+    margin-left: 15%;
+}
+
+#formulario{
+    flex: 1;
+    margin-left: 5%;
+}
+#presupuesto{
+    flex: 1.2;
+    width: 100%;
+}
+#formulario,#presupuesto{
+    margin-top: 2%;
+}
+
+
+#TotalPresupuesto p{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#enviar{
+    display: inline;
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Contacto*/
+
+.card{
+    width: 80%;
+    height: 450px;
+    margin-left: 10%;
+    margin-top: 2.5%;
+    padding: 15px;
+    border: ridge 4px;
+    border-radius: 10px;
+    background-color: var(--ColorFondo);
+    align-items: center;
+    
+}
+.g-1{
+    height: 90%;
+}
+
+.col-md-7{
+    object-fit: fill;
+}
+
+.ubicacion {
+    width: 90%;
+    height: 80%;
+    margin-right: 50px;
+    border: 1px ridge var(--ColorMenu);
+    border-radius: 15px;
+    
+}
+
+.tarjeta {
+    display: inline;
+}
+
+#titulo{
+    color: var(--ColorMenu);
+}
+.col-md-5{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+
+/*Pie de pagina*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    color: var(--ColorTextoMenu);
+    font-weight: 500;
+    background-color: var(--ColorMenu);
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+  @media (max-width: 768px) {
+    body{
+        margin-top: 260px;
+    }
+    
+    /*NavBar*/
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .contenedor-menu{
+        width: 100%;
+    }
+    .elementoMenu{
+        display: block;
+    }
+    .listaMenu{
+        text-align: center;
+    }
+    
+    /*Home*/
+    #tituloPrincipal{
+        font-size: 70px;
+        margin: 20px;
+    }
+    /*Quienes somos*/
+    .bloqueAcordeon{
+        display: block;
+    }
+    /*Productos*/
+    #ModalidadDeTrabajo{
+        flex: 1;
+    }
+
+    /*Presupuesto*/
+    .divPricipal{
+        display: block;
+        flex-wrap: wrap;
+    }
+    /*Contacto*/
+
+    .txtbox{
+        display: inline-block;
+        width: 90%;
+        vertical-align: middle;
+    
+    }
+  }

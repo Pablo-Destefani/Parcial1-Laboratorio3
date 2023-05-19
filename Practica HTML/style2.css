@@ -1,0 +1,46 @@
+body{
+    font-family: Papyrus;
+    font-size: 30px;
+}
+div{
+    width: 100%;
+    height: 100%;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 1000px;
+
+    position: inherit;  
+    margin: auto;  
+
+}
+td,th{
+    width: 250px;
+    height: 40px;   
+}
+th{
+    background-color: #bbbbbb;
+}
+td{
+    text-align: center;
+}
+/*.columnaDatos{
+    color: rgba(255, 0, 0, 0.635);
+}*/
+
+th:hover{
+    background-color: red;
+    font-weight: bold;
+    transition: 2s;
+}
+
+td:hover{
+    background-color: yellow;
+    font-weight: bold;
+    transition: 2s;
+}

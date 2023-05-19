@@ -1,0 +1,90 @@
+:root {
+    --titulos: #000000;
+
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    margin-bottom: 10px;
+}
+
+header{
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #000088;
+}
+
+.divImg {
+    float:right;
+}
+
+#logo {
+    height: 120px; 
+}
+
+.Titulo {
+    font-size: 22px;
+    color: var(--titulos);
+    margin: 40px;
+    float: left;
+}
+
+.cb{
+    clear:both;/*A partir de aca se anulan los float*/
+}
+
+#Col1, #Col2{
+    float: left;
+}
+
+#Col1{
+    width: 30%;
+}
+
+#Col2{
+    width: 65%;
+    margin: 20px 2.5%;
+}
+
+.titulo2{
+    color: var(--titulos);
+}
+
+#Lista{
+    float: left;
+    border: solid 3px;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 25px;
+}
+
+.Cuadro:hover{
+    background-color: black;
+    color: white;
+    transition: 2s;   
+}
+
+.Categoria{
+    list-style-type:none;
+}
+
+.Item{
+    list-style-type:circle;
+}
+
+#Texto{
+    margin: 0px 15px;
+    padding: 5%;
+    border: solid 3px;
+    border-radius: 12px;
+    text-align: center;
+}
+footer{
+    clear: both;
+    background-color: #000088;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 10px 0px;
+    text-align: center;   
+}

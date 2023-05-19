@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../dist/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>Scalenghe Servicios</title>
+</head>
+<body>
+    <nav class="navbar bg-personalizado" data-bs-theme="dark">
+        <div class="contenedor-menu">
+            <ul class="listaMenu">
+                <li class="elementoMenu">
+                    <a class="navbar-brand item-menu" href="Index.html">
+                        <img class="imagen-menu"src="../img/logo1.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+                        Home
+                    </a>
+                </li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="QuienesSomos.html">Quienes somos</a></li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="Productos.html">Productos</a></li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="Presupuesto.html">Presupuesto</a></li>
+                <li class="elementoMenu"><a class="navbar-brand item-menu" href="Contacto.html">Contacto</a></li>
+            </ul>  
+        </div>
+    </nav>
+
+    <div class="card mb-12" >
+        <div class="row g-0">
+            <h1 id="titulo">Información de contacto</h1>
+        </div>
+        <div class="row g-1 ">
+          <div class="col-md-7">
+            <iframe class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358.5593231840862!2d-61.494952536445766!3d-31.24259873530882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae15eb5ef8c7%3A0x542facd2415983e0!2sAv.%20Ernesto%20Salva%20473%2C%20S2300%20Rafaela%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1683385597866!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-5">
+              <p class="card-text"><strong>Dirección: </strong>Av. E. Salva 473, Rafaela, Santa Fe</p>
+              <p class="card-text"><strong>Teléfono: </strong>03492-425473/505473</p>
+              <p class="card-text"><strong>Correo electrónico: </strong>scalengheserv@arnet.com.ar</p>
+              <p class="card-text"><strong>Horarios de atención:</strong>Lunes a viernes de 8 a 12 y 15 a 18, sábados de 8 a 12</p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="card mb-12 h-100" >
+        <div class="titulo">
+            <h1>Contactese con nosotros</h1>
+        </div>
+        <form class="formulario">
+
+               <div class="form-group">
+                  <label class="label1" for="nombre">Nombre:</label>
+                  <input type="text" class="form-control txtbox" id="nombre" name="nombre">
+                  <span id="advertenciaNombre">Complete el campo nombre</span>
+               </div>
+        
+               <div class="form-group">
+                    <label class="label1" for="telefono">Teléfono:</label>
+                    <input type="Tel" class="form-control txtbox" id="telefono" name="telefono" >
+                    <span id="advertenciaTelefono">Complete el campo telefono</span>
+                    <span id="advertenciaTelefono2">Este campo debe ser númerico</span>
+                  </div>
+              
+                <div class="form-group">
+                  <label class="label1" for="email">Correo electrónico:</label>
+                  <input type="email" class="form-control txtbox" id="email" name="email" >
+                  <span id="advertenciaEmail">Complete el campo email</span>
+                  <span id="advertenciaEmail2">Formato de correo incorrecto</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="label2" for="mensaje">Dejenos su mensaje: </label>
+                    <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
+                  </div>
+                  <div >
+                    <button onclick="enviarFormulario()" type="button" id="enviar" class="btn btn-primary">Enviar</button>
+                  </div>
+            </div>             
+            </form>
+      </div>
+
+
+      <footer>
+        <p>Todos los derechos reservados &copy; 2023</p>
+    </footer>
+    <script src="../js/validarFormulario.js"></script>
+</body>
+</html>
